@@ -1,5 +1,5 @@
 
-from car import Car
+from car_single import Car
 
 class ElectricCar(Car):
 

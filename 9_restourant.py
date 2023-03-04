@@ -1,6 +1,7 @@
 
 
 class Restourant():
+    ''' new car'''
 
     def __init__(self, name, cuisine):
 
