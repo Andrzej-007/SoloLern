@@ -1,22 +1,26 @@
-import os
-
-t = os.path.join('Users' ,'andrzej_kozlowski', 'PycharmProjects', 'SoloLern')
-print(t)
 
 
-with open('text_folder/hello_its_me.txt') as my_file:
-    content = my_file.read()
-    print(content.rstrip())   # rstrip() - to avaoid the blank line at the end of the line
+def show_magicitis(magic_names):
 
-print('********')
+    for i in magic_names:
+        print(i)
 
-# example OS X : '/home/ehmatthes/other_files/text_files/filename.txt'
-# exmaple Windows : file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt'
+def make_great(magic_names, the_grate_name):
 
-file_patch = '/Users/andrzej_kozlowski/my_text_file.txt'
-with open (file_patch) as object_two:
-    # content_two = object_two.read()
-    # print(content_two)
+    for i in magic_names:
+        # print(f"i : {i}")
+        the_grate_name.append(f"the_great_{i}")
+    # print(f"chech test: {magic_names}")
 
-    for easch_line in object_two:
-        print(easch_line)
+
+magic_names = ['and', 'rob', 'iwo', 'jago']
+the_grate_name =[]
+show_magicitis(magic_names)
+make_great(magic_names, the_grate_name)
+
+print(the_grate_name)
+
+
+
+
+
