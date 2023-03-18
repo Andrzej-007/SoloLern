@@ -9,8 +9,8 @@ class User():
         self.email = email
 
     def describe_user(self):
-        print(f'the user: {self.first_name.title()}')
-        print(f"{self.last_name.title()}")
+        print(f'the user name: {self.first_name.title()}')
+        print(f"the surname: {self.last_name.title()}")
         print(f"age:{ self.age}")
         print(f"email: {self.email}")
 
@@ -21,7 +21,7 @@ class User():
 
 class Admin(User):
 
-    def __init__(self,first_n, last_n,age='', email='admin@admoin.net' ):
+    def __init__(self,first_n, last_n,age="None", email='admin@admoin.net' ):
         super().__init__(first_n, last_n,age, email)
         self.privileges = Privileges()
 
@@ -37,14 +37,14 @@ class Privileges():
             print(f'-{i}')
 
 
-user_and = User('andrzej', 'kozlowski', 47, 'and@emial')
-user_and.describe_user()
-user_and.greet_user()
+# user_and = User('andrzej', 'kozlowski', 47, 'and@emial')
+# user_and.describe_user()
+# user_and.greet_user()
+#
+# entitelment_list = ['can add post', 'can edit post', 'can remove post']
+# admin = Admin('andrzej', 'kozlowski')
 
-entitelment_list = ['can add post', 'can edit post', 'can remove post']
-admin = Admin('andrzej', 'kozlowski')
-
-admin.describe_user()
-admin.privileges.admin_privilages = entitelment_list
-admin.greet_user()
-admin.privileges.show_privileges()
+# admin.describe_user()
+# admin.privileges.admin_privilages = entitelment_list
+# admin.greet_user()
+# admin.privileges.show_privileges()
